@@ -39,15 +39,15 @@ console.log(nuevoArreglo);
 
 //ejercicio5
 
-let alumnos = ["Sofía", "Carlos", "Bruno", "Lucía", "Carla"];
+let alumnos2 = ["Sofía", "Carlos", "Bruno", "Lucía", "Carla"];
+let nombre2 = prompt("Introduce un nombre para buscar:");
+let i = 0;
 
-let nombre = prompt("Introduce un nombre para buscar:");
-
-if (alumnos.includes(nombre)) {
-    console.log("el nombres" + nombre + "se encontro el arreglo.");
-} else {
-    console.log("el nombre" + nombre  + " no se encuentra en el arreglo.");
+while (i < alumnos2.length) {
+    alumnos2[i] === nombre2 && console.log("El nombre " + nombre2 + " se encontró en el arreglo.");
+    i++;
 }
+
 
 //ejercicio6
 
@@ -74,4 +74,4 @@ for (let i = 0; i < notas.length; i++) {
 
 let promedio = Suma / notas.length;
 
-console.log("El promedio es " + promedio);
+console.log("El promedio es " + promedio); 
